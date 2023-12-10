@@ -1,17 +1,15 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
-   
-const videos = JSON.parse(localStorage.getItem("lista")) || [];
+  const videos = JSON.parse(localStorage.getItem('lista')) || [];
 
-    return (
-        <div>
-            <h1>your tube</h1>
-            <p>sua pagina de videos favorita!!!</p>
-            <br></br>
-            
-            <Link to="/todo">Ir para proxima pagina</Link>
-        </div>
-    );
+  return (
+    <div>
+      <h1>Your Tube</h1>
+      <p>Sua página de vídeos favorita!!!</p>
+      <br />
+      <Link to="/todo">Ir para próxima página</Link>
+    </div>
+  );
 }
