@@ -23,6 +23,10 @@ export default function Home() {
           <Card key={index} ytb={video} />
         ))}
       </div>
+
+      <div className="footer">
+        <p>&copy; 2023 Your Tube - Todos os direitos reservados</p>
+      </div>
     </div>
   );
 }

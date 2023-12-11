@@ -1,6 +1,8 @@
-import { useParams } from "react-router-dom";
+import { useParams,  Link } from "react-router-dom";
 import React from 'react';
 import Card from "../Componentes/Card";
+import './detalhe.css';
+
 
 export default function Detalhe() {
     const { id } = useParams();
@@ -9,8 +11,13 @@ export default function Detalhe() {
 
     return (
         <div>
+            <div>
             <Card ytb={buscarPorId} />
             <p>{buscarPorId.descricao}</p>
+            <Link to="/" className="button-link">Voltar para o Home</Link>
+           
+      </div>
         </div>
+        
     );
 }

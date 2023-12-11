@@ -20,5 +20,6 @@ export default function Destaque() {
         <Link to="/" className="button-link">Voltar para o Home</Link>
       </div>
     </div>
+    
   );
 }
