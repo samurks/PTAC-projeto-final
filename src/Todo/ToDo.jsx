@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 export default function ToDo() {
@@ -13,8 +13,6 @@ export default function ToDo() {
   useEffect(() => {
     localStorage.setItem('lista', JSON.stringify(lista));
   }, [lista]);
-
-  //const navigate = useNavigate();
 
   const salvar = (e) => {
     e.preventDefault();
@@ -31,29 +29,32 @@ export default function ToDo() {
     setVideo('');
     setUrl('');
     setDescricao('');
-   //navigate('/');
   };
 
-
-
   return (
-    <div>
-      <Link to="/">Voltar para o Home</Link>
-      <h1>Your Tube</h1>
-      <div>
+    <div className="container">
+      <div className="links">
+        <Link to="/destaque">Ir para Destaque</Link>
+        <Link to="/">Voltar para o Home</Link>
+      </div>
+      <div className="form-container">
+        <h1>Your Tube</h1>
         <form onSubmit={salvar}>
+          <label>Nome do vídeo:</label>
           <input
             type="text"
             value={video}
             onChange={(e) => setVideo(e.target.value)}
-            placeholder="Nome do video"
+            placeholder="Nome do vídeo"
           />
+          <label>URL do vídeo:</label>
           <input
             type="text"
             value={url}
             onChange={(e) => setUrl(e.target.value)}
             placeholder="URL do vídeo"
           />
+          <label>Descrição do vídeo:</label>
           <input
             type="text"
             value={descricao}
