@@ -1,18 +1,15 @@
 import { useParams } from "react-router-dom";
+import React from 'react';
+import Card from "../Componentes/Card";
 
-
-export default function Detalhe(){
+export default function Detalhe() {
     const { id } = useParams();
-    const lista = JSON.parse(localStorage.getItem("lista"));
-    const planeta = lista.filter( (planeta) => {
-        if([planeta].id == id){
-            return planeta;
-        }
-        return null;
-    })
+    const videos = JSON.parse(localStorage.getItem('lista')) || [];
+    const buscarPorId = videos.find((video) => video.id == id) || null;
 
-    return(
-         <Card planeta={planeta[0]}></Card>
+    return (
+        <div>
+            <Card ytb={buscarPorId} />
+        </div>
     );
-
 }
