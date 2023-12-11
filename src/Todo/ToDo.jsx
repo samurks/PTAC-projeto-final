@@ -14,7 +14,7 @@ export default function ToDo() {
     localStorage.setItem('lista', JSON.stringify(lista));
   }, [lista]);
 
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
   const salvar = (e) => {
     e.preventDefault();
@@ -31,13 +31,10 @@ export default function ToDo() {
     setVideo('');
     setUrl('');
     setDescricao('');
-    navigate('/');
+   //navigate('/');
   };
 
-  const remover = (id) => {
-    const novaLista = lista.filter((vid) => vid.id !== id);
-    setLista(novaLista);
-  };
+
 
   return (
     <div>
