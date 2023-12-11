@@ -9,6 +9,7 @@ export default function Detalhe() {
 
     return (
         <div>
+            <p>{buscarPorId.descricao}</p>
             <Card ytb={buscarPorId} />
         </div>
     );
