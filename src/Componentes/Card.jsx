@@ -7,7 +7,7 @@ export default function Card({ ytb }) {
 
   return (
     <div>
-      <Link className="corTitulo" to={`detalhe/${ytb.id}`}>
+      <Link className="corTitulo" to={`/detalhe/${ytb.id}`}>
         <h1>{ytb.video}</h1>
       </Link>
       <iframe
