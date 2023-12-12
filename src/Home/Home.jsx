@@ -14,7 +14,7 @@ export default function Home() {
       </div>
 
       <div className="links">
-        <Link to="/todo">Ir para próxima página</Link>
+        <Link to="/todo">CADASTRAR VIDEO</Link>
         <Link to="/destaque">Ir para o destaque</Link>
       </div>
 

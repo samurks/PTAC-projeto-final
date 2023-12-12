@@ -17,7 +17,7 @@ export default function Destaque() {
         ))}
       </div>
       <div className="links">
-        <Link to="/" className="button-link">Voltar para o Home</Link>
+        <Link to="/" className="button-link">Voltar para pagina inicial</Link>
       </div>
     </div>
     
