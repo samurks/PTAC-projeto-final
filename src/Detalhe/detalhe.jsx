@@ -13,7 +13,7 @@ export default function Detalhe() {
             <div className="video-container">
                 <Card ytb={buscarPorId} />
                 <p className="description">{buscarPorId.descricao}</p>
-                <Link to="/" className="link-back">Voltar para o Home</Link>
+                <Link to="/" className="link-back">Voltar para pagina inicial</Link>
             </div>
         </div>
     );

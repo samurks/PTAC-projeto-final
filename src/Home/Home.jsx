@@ -15,7 +15,7 @@ export default function Home() {
 
       <div className="links">
         <Link to="/todo">CADASTRAR VIDEO</Link>
-        <Link to="/destaque">Ir para o destaque</Link>
+        <Link to="/destaque">VIDEOS DESTAQUE</Link>
       </div>
 
       <div className="videos">
@@ -23,7 +23,7 @@ export default function Home() {
           <Card key={index} ytb={video} />
         ))}
       </div>
-
+<br></br>
       <div className="footer">
         <p>&copy; 2023 Your Tube - Todos os direitos reservados</p>
       </div>

@@ -34,8 +34,8 @@ export default function ToDo() {
   return (
     <div className="container">
       <div className="links">
-        <Link to="/destaque">Ir para Destaque</Link>
-        <Link to="/">Voltar para o Home</Link>
+        <Link to="/">Voltar para pagina inicial</Link>
+        <Link to="/destaque">VIDEOS DESTAQUE</Link>
       </div>
       <div className="form-container">
         <h1>Your Tube</h1>
